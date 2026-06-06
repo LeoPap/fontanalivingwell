@@ -1,0 +1,239 @@
+<!DOCTYPE html><html lang='en'><head><title>Fontana – Drinks</title>
+  <link rel="stylesheet" type="text/css" href="fontanaStyle.css" />
+  <link rel="icon" href="fontanaImages/CamScanner 12-04-2022 16.09_4.jpg" type="image/ergasiaIMGs" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+<style>
+.drinks-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 4px;
+}
+@media(min-width:600px){ .drinks-grid { grid-template-columns: repeat(2,1fr); } }
+@media(min-width:860px){ .drinks-grid { grid-template-columns: repeat(3,1fr); } }
+
+.drinks-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  box-shadow: var(--shadow);
+}
+.drinks-card h3 {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+  margin: 0 0 10px;
+}
+.drinks-card li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  padding: 7px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  font-size: 0.88rem;
+  color: var(--cream-muted);
+  list-style: none;
+}
+.drinks-card li:last-child { border-bottom: none; }
+.drinks-card ul { padding: 0; margin: 0; }
+.drinks-section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  font-style: italic;
+  color: var(--gold-light);
+  margin: 28px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+</style>
+</head><body>
+  <div class="top-bar">
+    <div class="changeLangBox">
+      <button class="lang-active"><a href="drinksEN.html">English</a></button>
+      <button><a href="drinksEN.html">Ελληνικά</a></button>
+    </div>
+    <div class="dropdown">
+     <button><i class="material-icons">menu</i> Menu</button>
+      <div class="dropdown-options">
+        <a href="coffeeEN.html"><i class="material-icons">coffee</i> Coffee</a>
+        <a href="juiceEN.html"><i class="material-icons">spa</i> Freshly Squeezed Juice</a>
+        <a href="livingWellDrinksEN.html"><span class="material-symbols-outlined">psychiatry</span> Living Well Drinks</a>
+        <a href="smoothiesEN.html"><i class="material-icons">blender</i> Smoothies</a>
+        <a href="smoothBowlsEN.html"><i class="material-icons">rice_bowl</i> Smooth Bowls</a>
+        <a href="fruitEN.html"><span class="material-symbols-outlined">nutrition</span> Fruit Salads &amp; Yogurt</a>
+        <a href="brunchEN.html"><i class="material-icons">dining</i> Breakfast &amp; Brunch</a>
+        <a href="teaEN.html"><i class="material-icons">emoji_food_beverage</i> Tea &amp; Herbal Blends</a>
+        <a href="softDrinksEN.html"><i class="material-icons">local_drink</i> Soft Drinks</a>
+        <a href="drinksEN.html"><i class="material-icons">local_bar</i> Drinks</a>
+      </div>
+    </div>
+  </div>
+<h1><a href="menuEN.html">Fontana "Living Well Store"</a></h1>
+<h2>Drinks</h2>
+
+<p class="drinks-section-title">Spirits</p>
+<div class="drinks-grid">
+
+  <div class="drinks-card">
+    <h3>Gin</h3>
+    <ul>
+      <li>Gordons <span class="price">€6</span></li>
+      <li>Bombay <span class="price">€6</span></li>
+      <li>Tanqueray <span class="price">€7</span></li>
+      <li>Hendrick's <span class="price">€9</span></li>
+    </ul>
+  </div>
+
+  <div class="drinks-card">
+    <h3>Vodka</h3>
+    <ul>
+      <li>Serkova <span class="price">€6</span></li>
+      <li>Finlandia <span class="price">€6</span></li>
+      <li>Belvedere <span class="price">€10</span></li>
+    </ul>
+  </div>
+
+  <div class="drinks-card">
+    <h3>Rum</h3>
+    <ul>
+      <li>Bacardi Blanco <span class="price">€6</span></li>
+      <li>Sailor Jerry <span class="price">€7</span></li>
+      <li>Plantation Gold <span class="price">€7</span></li>
+      <li>Plantation Overproof <span class="price">€9</span></li>
+      <li>Sagatiba Cachaca <span class="price">€6</span></li>
+    </ul>
+  </div>
+
+  <div class="drinks-card">
+    <h3>Whiskey</h3>
+    <ul>
+      <li>Jameson <span class="price">€6</span></li>
+      <li>Johnnie Red <span class="price">€6</span></li>
+      <li>Jack Daniel's <span class="price">€8,50</span></li>
+      <li>Johnnie Black <span class="price">€9</span></li>
+    </ul>
+  </div>
+
+  <div class="drinks-card">
+    <h3>Tequila</h3>
+    <ul>
+      <li>Jose Cuervo Blanco <span class="price">€7</span></li>
+      <li>Jose Cuervo Reposado <span class="price">€7,50</span></li>
+      <li>Don Julio Blanco <span class="price">€9,50</span></li>
+      <li>Don Julio Reposado <span class="price">€10</span></li>
+    </ul>
+  </div>
+
+  <div class="drinks-card">
+    <h3>Others</h3>
+    <ul>
+      <li>Metaxa 5* <span class="price">€6</span></li>
+      <li>Martini Bianco <span class="price">€6</span></li>
+      <li>Punt e Mes <span class="price">€6</span></li>
+      <li>Campari <span class="price">€6</span></li>
+      <li>Malibu <span class="price">€6</span></li>
+    </ul>
+  </div>
+
+</div>
+
+<p class="drinks-section-title">Cocktails</p>
+<div class="drinks-grid">
+
+  <div class="drinks-card">
+    <h3>Cocktails</h3>
+    <ul>
+      <li>Aperol Spritz <span class="price">€7</span></li>
+      <li>Aperol Spritz with Grapefruit Soda <span class="price">€8</span></li>
+      <li>Campari Spritz <span class="price">€7</span></li>
+      <li>Mojito lime / strawberry <span class="price">€8</span></li>
+      <li>Caipirinha lime / strawberry <span class="price">€8</span></li>
+      <li>Caipiroska lime / strawberry <span class="price">€8</span></li>
+      <li>Margarita lemon / strawberry <span class="price">€8</span></li>
+      <li>Frozen Daiquiri strawberry / melon <span class="price">€8</span></li>
+      <li>Paloma <span class="price">€7</span></li>
+      <li>Negroni <span class="price">€8</span></li>
+      <li>Gin Fizz <span class="price">€6</span></li>
+      <li>Cuba Libre <span class="price">€6</span></li>
+      <li>Pornstar <span class="price">€8</span></li>
+      <li>Mai Tai <span class="price">€10</span></li>
+      <li>Zombie <span class="price">€10</span></li>
+    </ul>
+  </div>
+
+  <div class="drinks-card">
+    <h3>Winter Cocktails</h3>
+    <ul>
+      <li>Gluehwein — hot wine with herbs <span class="price">€6</span></li>
+      <li>Hot Toddy <span class="price">€8</span></li>
+      <li>Hot Tea with Cognac <span class="price">€6</span></li>
+    </ul>
+  </div>
+
+</div>
+
+<p class="drinks-section-title">Beer &amp; Wine</p>
+<div class="drinks-grid">
+
+  <div class="drinks-card">
+    <h3>Beers</h3>
+    <ul>
+      <li>Heineken 330ml <span class="price">€3,50</span></li>
+      <li>Kaiser 500ml <span class="price">€5,00</span></li>
+    </ul>
+  </div>
+
+  <div class="drinks-card">
+    <h3>Greek Beers</h3>
+    <ul>
+      <li>Eza 330ml <span class="price">€4,00</span></li>
+      <li>MAMOS 500ml <span class="price">€4,50</span></li>
+      <li>Vergina 500ml <span class="price">€4,50</span></li>
+      <li>Nissos 330ml <span class="price">€5,00</span></li>
+    </ul>
+  </div>
+
+  <div class="drinks-card">
+    <h3>Draft Beers</h3>
+    <ul>
+      <li>Alfa 330ml <span class="price">€3,50</span></li>
+      <li>Alfa 500ml <span class="price">€4,50</span></li>
+    </ul>
+  </div>
+
+  <div class="drinks-card">
+    <h3>Wine — Glass</h3>
+    <ul>
+      <li>White Dry (Moschofilero-Roditis) <span class="price">€3,50</span></li>
+      <li>Rosé Dry (Agiorgitiko) <span class="price">€4,00</span></li>
+      <li>Red Dry (Agiorgitiko) <span class="price">€4,00</span></li>
+    </ul>
+  </div>
+
+  <div class="drinks-card">
+    <h3>Dogkas Family Winery — Bottle</h3>
+    <ul>
+      <li>White Dry (Moschofilero-Roditis) <span class="price">€16,00</span></li>
+      <li>Rosé Dry (Agiorgitiko) <span class="price">€16,00</span></li>
+      <li>Red Dry (Agiorgitiko) <span class="price">€16,00</span></li>
+      <li>Red Semisweet (Agiorgitiko-Merlot) <span class="price">€19,00</span></li>
+      <li>Red Dry (Agiorgitiko, 12 months in French oak barrels) <span class="price">€24,00</span></li>
+    </ul>
+  </div>
+
+</div>
+</body></html>
